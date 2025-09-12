@@ -48,7 +48,6 @@ sleep 10
 if curl -f http://localhost:8080/health >/dev/null 2>&1; then
     echo -e "${GREEN}✅ API is ready at http://localhost:8080${NC}"
     echo -e "${GREEN}✅ Database admin at http://localhost:8081${NC}"
-    echo -e "${GREEN}📚 API Documentation will be at http://localhost:8080/swagger${NC}"
 else
     echo -e "${YELLOW}⚠️  API might still be starting up. Check logs with: $DOCKER_COMPOSE logs api${NC}"
 fi
